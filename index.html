@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Work Board</title>
+          <link rel="stylesheet" href="./board1.css">
+          <link rel="stylesheet" href="./board2.css">
+          <link rel="stylesheet" href="./board3.css">
+
+</head>
+
+<body>
+          <h1>WORK BOARD</h1>
+          <div class="container"> .
+                    <div class="board" id="one">
+                              <div class="card">
+                                        <div class="big-year" id="yearNum">
+                                        </div>
+                                        <div class="triangle-left">
+                                        </div>
+                                        <div class="triangle-right">
+                                        </div>
+                                        <div class="months">
+                                        </div>
+                                        <hr class="month-line" />
+                                        <table class="calendar-table" id="calendar">
+                                                  <thead>
+                                                            <tr>
+                                                                      <th class="days-of-week">Sun</th>
+                                                                      <th class="days-of-week">Mon</th>
+                                                                      <th class="days-of-week">Tue</th>
+                                                                      <th class="days-of-week">Wed</th>
+                                                                      <th class="days-of-week">Thu</th>
+                                                                      <th class="days-of-week">Fri</th>
+                                                                      <th class="days-of-week">Sat</th>
+                                                            </tr>
+                                                  </thead>
+                                                  <tbody id="calendar-body">
+                                                  </tbody>
+                                        </table>
+                              </div>
+                              <div class="quote">
+                                        <h2>Little bit of motivation</h2>
+                                        <div id="message" class="message"></div>
+                                        <div class="btndiv"><button id="messageBtn" class="btn">Hit me!</button></div>
+                              </div>
+
+                    </div>
+
+                    <div class="board" id="two">
+                              <div class="control clearfix">
+                                        <div class="control-session">
+                                                  <span class="control-title">session</span>
+                                                  <i class="fa fa-minus-circle" id="session-minus"></i> &nbsp; <span
+                                                            id="session">25 </span> &nbsp; <i class="fa fa-plus-circle"
+                                                            id="session-plus"></i>
+                                        </div>
+                                        <div class="control-break">
+                                                  <span class="control-title">break</span>
+                                                  <i class="fa fa-minus-circle" id="break-minus"></i> &nbsp; <span
+                                                            id="break">5</span> &nbsp; <i class="fa fa-plus-circle"
+                                                            id="break-plus"></i>
+                                        </div>
+                              </div>
+                              <div class="pomodoro session">
+
+                                        <div class="status">session</div>
+                                        <div class="timer">25:00</div>
+                                        <button class="button" id="switch"><i class="fa fa-exchange"></i></button>
+                                        <button class="button" id="reset"><i class="fa fa-refresh"></i></button>
+                                        <button class="button" id="toggle"><i class="fa fa-play"></i></button>
+                              </div>
+                    </div>
+
+                    <div class="board" id="three">
+                              <div class="main">
+                                        <h2>TO-DO LIST</h2>
+                                        <form class="" action="index.html" method="post">
+                                                  <input type="text" placeholder="Add a new task" name="task">
+                                                  <button type="submit">ADD</button>
+                                        </form>
+                                        <div class="tasksBoard">
+                                                  <ul>
+                                                            <li><span class="delete">x</span><input
+                                                                                type="checkbox"><label>Read one
+                                                                                chapter</label>
+                                                            </li>
+                                                            <li><span class="delete">x</span><input
+                                                                                type="checkbox"><label>Update
+                                                                                project</label>
+                                                            </li>
+                                                            <li><span class="delete">x</span><input
+                                                                                type="checkbox"><label>Write a
+                                                                                mail</label>
+                                                            </li>
+
+                                                  </ul>
+                                                  <a id="clear">Clear</a>
+                                        </div>
+                              </div>
+
+                    </div>
+          </div>
+          <script src="./board1.js"></script>
+          <script src="./board2.js"></script>
+          <script src="./board3.js"></script>
+          <script src="https://use.fontawesome.com/1fc9b6b738.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+.main {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+#three h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.199), 0 6px 6px rgba(0, 0, 0, 0.404);
+}
+
+form {
+  background-color: #38040e;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  width: 75%;
+  outline: 0;
+  border: none;
+  font-size: 1.2rem;
+  background: #38040e;
+  color: white;
+}
+
+input[type="checkbox" i] {
+  background-color: #38040e;
+  cursor: pointer;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
+}
+
+#three button {
+  font-size: 1em;
+  color: white;
+  background-color: #38040e;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  width: 20%;
+}
+
+.tasksBoard {
+  background-color: #fff;
+  margin: 1.5rem auto;
+  width: 100%;
+  padding: 0.5rem;
+  padding-right: 2.1rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  overflow: auto;
+  /*display: none;*/
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  border-bottom: 1px solid #53bdff;
+  padding-bottom: 0.6rem;
+  padding-top: 1rem;
+  font-size: 1.3em;
+  color: #300000;
+}
+
+a {
+  float: right;
+  color: #610505;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.delete {
+  background-color: #38040e;
+  float: right;
+  padding: 0.1rem 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+  .main {
+    margin: auto;
+    width: 100%;
+  }
+  input[type="text"] {
+    width: 80%;
+  }
+  button {
+    width: 10%;
+  }
+}
