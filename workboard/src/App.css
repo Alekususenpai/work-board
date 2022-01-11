@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./workmodeon.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  background-color: rgba(245, 245, 220, 0.089);
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.199), 0 6px 6px rgba(0, 0, 0, 0.404);
+}
+
+@media (min-width: 750px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
