@@ -1,0 +1,133 @@
+/* CALENDAR */
+.card,
+.quote {
+  background-color: white;
+  border-radius: 1em;
+  padding: 4em 2em;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: #38040e;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.calendar-table {
+  margin: 0 auto;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.calendar-table thead tr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.calendar-table thead tr th.days-of-week {
+  padding: 0 0.2em;
+}
+
+.months,
+.big-year {
+  padding: 0.5em;
+}
+
+.big-year {
+  font-size: 1.2em;
+}
+
+.triangle-left {
+  border-top: 0.5em solid transparent;
+  border-right: 1em solid white;
+  border-bottom: 0.5em solid transparent;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}
+
+.triangle-right {
+  border-top: 0.5rem solid transparent;
+  border-left: 1rem solid white;
+  border-bottom: 0.5rem solid transparent;
+  position: absolute;
+  top: 15%;
+  right: 30%;
+}
+
+.each-month {
+  margin: auto;
+  border-radius: 0.2em;
+}
+
+.each-month:hover {
+  background-color: #ad2831;
+  padding: 0.1em;
+}
+
+.dates:hover {
+  background-color: #ad2831;
+  border-radius: 0.2em;
+}
+
+.selected,
+.selected-day {
+  background-color: #640d14;
+  border-radius: 0.2em;
+  padding: 0.1em;
+}
+
+table [title="today"] {
+  background-color: #640d14;
+  border-radius: 40%;
+  border: 1px solid white;
+}
+/* CALENDAR END*/
+
+/*  QUOTE  */
+
+.message {
+  font-size: 1.2em;
+  max-width: 80%;
+  margin: 2em auto;
+}
+
+.btn {
+  background-color: #38040e;
+  color: #fff;
+  border-radius: 0.6em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+}
+
+/*  QUOTE END */
+
+@media (min-width: 450px) {
+  .board {
+    padding: 2em;
+  }
+
+  .card,
+  .quote {
+    padding: 4em 2.5em;
+  }
+}
+
+@media (min-width: 600px) {
+  .board {
+    padding: 2em;
+  }
+
+  .card,
+  .quote {
+    padding: 5em 2em;
+  }
+}

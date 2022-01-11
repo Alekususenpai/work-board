@@ -3,6 +3,7 @@ import Header from './components/Header';
 import BoardOne from './components/BoardOne/BoardOne';
 import BoardTwo from './components/BoardTwo/BoardTwo';
 import BoardThree from './components/BoardThree/BoardThree';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <BoardTwo />
         <BoardThree />
       </div>
+      <Footer />
     </div>
   );
 }

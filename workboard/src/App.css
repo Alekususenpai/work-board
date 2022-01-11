@@ -12,18 +12,47 @@ body {
 
 .container {
   width: 90%;
+  margin: 0 auto;
 }
 
 h1 {
   color: white;
-  font-weight: bold;
+  font-weight: normal;
+  letter-spacing: 3px;
   font-size: 3em;
   text-align: center;
-  background-color: rgba(245, 245, 220, 0.089);
+  background-color: rgba(75, 42, 19, 0.664);
   text-shadow: 0 5px 15px rgba(0, 0, 0, 0.199), 0 6px 6px rgba(0, 0, 0, 0.404);
 }
 
-@media (min-width: 750px) {
+.board {
+  background: rgba(255, 255, 255, 0.616);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1em;
+  padding: 1.2em;
+}
+
+/*       MEDIA QUERY        */
+@media (min-width: 450px) {
+  .board {
+    padding: 2em;
+  }
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 600px) {
+  .board {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 950px) {
   .container {
     display: flex;
     flex-direction: row;
