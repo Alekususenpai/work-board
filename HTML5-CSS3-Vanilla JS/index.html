@@ -9,19 +9,25 @@
           <link rel="stylesheet" href="./board1.css">
           <link rel="stylesheet" href="./board2.css">
           <link rel="stylesheet" href="./board3.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+                    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
           <h1>WORK BOARD</h1>
-          <div class="container"> .
+          <div class="container">
                     <div class="board" id="one">
                               <div class="card">
-                                        <div class="big-year" id="yearNum">
-                                        </div>
-                                        <div class="triangle-left">
-                                        </div>
-                                        <div class="triangle-right">
+                                        <div class="header-calendar">
+
+                                                  <span><i class="fas fa-caret-left fa-lg"></i></span>
+
+                                                  <div class="big-year" id="yearNum">
+                                                  </div>
+
+                                                  <span><i class="fas fa-caret-right fa-lg"></i></span>
                                         </div>
                                         <div class="months">
                                         </div>
@@ -51,27 +57,42 @@
                     </div>
 
                     <div class="board" id="two">
+
                               <div class="control clearfix">
+
                                         <div class="control-session">
                                                   <span class="control-title">session</span>
-                                                  <i class="fa fa-minus-circle" id="session-minus"></i> &nbsp; <span
-                                                            id="session">25 </span> &nbsp; <i class="fa fa-plus-circle"
-                                                            id="session-plus"></i>
+                                                  <div class="flex">
+                                                            <i class="fa fa-minus-circle" id="session-minus"></i>
+                                                            <span id="session">25 </span> <i class="fa fa-plus-circle"
+                                                                      id="session-plus"></i>
+                                                  </div>
                                         </div>
+
                                         <div class="control-break">
                                                   <span class="control-title">break</span>
-                                                  <i class="fa fa-minus-circle" id="break-minus"></i> &nbsp; <span
-                                                            id="break">5</span> &nbsp; <i class="fa fa-plus-circle"
-                                                            id="break-plus"></i>
+                                                  <div class="flex">
+                                                            <i class="fa fa-minus-circle" id="break-minus"></i> <span
+                                                                      id="break">5</span> <i class="fa fa-plus-circle"
+                                                                      id="break-plus"></i>
+                                                  </div>
                                         </div>
-                              </div>
-                              <div class="pomodoro session">
 
-                                        <div class="status">session</div>
-                                        <div class="timer">25:00</div>
-                                        <button class="button" id="switch"><i class="fa fa-exchange"></i></button>
-                                        <button class="button" id="reset"><i class="fa fa-refresh"></i></button>
-                                        <button class="button" id="toggle"><i class="fa fa-play"></i></button>
+                              </div>
+
+                              <div class="pomodoro glow">
+                                        <div class="pomodoro-center">
+                                                  <div class="status">session</div>
+                                                  <div class="timer">25:00</div>
+                                        </div>
+                                        <div class="flex">
+                                                  <button class="button" id="switch"><i
+                                                                      class="fa fa-exchange"></i></button>
+                                                  <button class="button" id="reset"><i
+                                                                      class="fa fa-refresh"></i></button>
+                                                  <button class="button" id="toggle"><i class="fa fa-play"></i></button>
+                                        </div>
+
                               </div>
                     </div>
 
