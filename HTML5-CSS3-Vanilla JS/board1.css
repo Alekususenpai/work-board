@@ -70,6 +70,8 @@ h1 {
 
 .big-year {
   font-size: 1.3em;
+  margin: 0;
+  padding: 0;
 }
 
 .each-month {
