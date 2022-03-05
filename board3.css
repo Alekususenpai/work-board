@@ -15,6 +15,8 @@
 }
 
 form {
+  display: flex;
+  justify-content: space-between;
   background-color: #38040e;
   padding: 0.5rem;
   border-radius: 1rem;
@@ -22,20 +24,20 @@ form {
 }
 
 input[type="text"] {
-  width: 75%;
+  padding-left: 1em;
+  width: 70%;
   outline: 0;
   border: none;
   font-size: 1.2rem;
   background: #38040e;
   color: white;
+  cursor: pointer;
 }
 
-input[type="checkbox" i] {
+input[type="checkbox"] {
   background-color: #38040e;
   cursor: pointer;
   appearance: auto;
-  box-sizing: border-box;
-  margin: 3px 3px 3px 4px;
   padding: initial;
   border: initial;
 }
@@ -45,11 +47,11 @@ input[type="checkbox" i] {
   color: white;
   background-color: #38040e;
   outline: 0;
-  border: none;
-  cursor: pointer;
+  border: 0;
   font-weight: bold;
   padding: 0.5rem;
   width: 20%;
+  cursor: pointer;
 }
 
 .tasksBoard {
@@ -59,7 +61,6 @@ input[type="checkbox" i] {
   padding: 0.5rem;
   padding-right: 2.1rem;
   border-radius: 1rem;
-  box-sizing: border-box;
   overflow: auto;
   /*display: none;*/
 }
@@ -71,7 +72,7 @@ ul {
 li {
   border-bottom: 1px solid #53bdff;
   padding-bottom: 0.6rem;
-  padding-top: 1rem;
+  padding-top: 1em;
   font-size: 1.3em;
   color: #300000;
 }
@@ -79,17 +80,16 @@ li {
 a {
   float: right;
   color: #610505;
-  font-size: 1.2em;
-  cursor: pointer;
-  padding: 0.5rem;
+  font-size: 1.3em;
+  padding: 0.5em 0;
 }
 
 .delete {
   background-color: #38040e;
   float: right;
-  padding: 0.1rem 0.4rem;
+  padding: 0 0.3em;
+  text-align: center;
   color: #fff;
   cursor: pointer;
-  border-radius: 1rem;
-  font-size: 1.2rem;
+  border-radius: 1em;
 }

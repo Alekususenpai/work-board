@@ -64,6 +64,7 @@ function renderCalendar(month, year) {
                                         let dateNum = document.createTextNode(date);
                                         if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
                                                   day.title = "today";
+
                                         }
                                         day.appendChild(dateNum);
                                         week.appendChild(day);
