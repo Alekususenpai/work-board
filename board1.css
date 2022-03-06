@@ -133,7 +133,7 @@ table [title="today"] {
 /*   MEDIA QUERIES   */
 @media only screen and (min-width: 500px) {
   .container {
-    width: 80%;
+    width: 100%;
   }
   .board {
     max-width: 500px;
@@ -144,15 +144,16 @@ table [title="today"] {
 @media only screen and (min-width: 1000px) {
   .container {
     display: flex;
-    width: 95%;
+justify-content: space-evenly;
+
   }
   h1 {
     font-size: 3em;
-    margin: 0.4em;
+    margin: 0.6em;
   }
   .board {
-    width: 31%;
-    margin: 1em;
+    width: 30%;
     padding: 1em;
+    margin: 0 auto;
   }
 }
