@@ -1,3 +1,9 @@
+:root {
+  --hero-color: #38040e;
+  --hero2-color: #530515;
+  --pomodoro-gray-btn: #3e4348;
+}
+
 #two {
   display: flex;
   flex-direction: column;
@@ -30,7 +36,7 @@
 .control-session,
 .control-break {
   width: 40%;
-  color: #530515;
+  color: var(--hero2-color);
   font-size: 1.5em;
   text-align: center;
 }
@@ -41,7 +47,7 @@
   align-items: center;
   flex-direction: column;
   margin: 3em auto;
-  background-color: #530515;
+  background-color: var(--hero2-color);
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -75,12 +81,12 @@
   width: 40px;
   height: 40px;
   background: #fff;
-  color: #3e4348;
+  color: var(--pomodoro-gray-btn);
   line-height: 36px;
 }
 
 .button:hover {
-  background: #3e4348;
+  background: var(--pomodoro-gray-btn);
   color: #fff;
 }
 
@@ -109,8 +115,8 @@
     box-shadow: 0 0 30px 0 rgba(255, 100, 100, 0.3);
   }
   to {
-    -webkit-box-shadow: 0 0 50px 5px #38040e;
-    -moz-box-shadow: 0 0 50px 5px #38040e;
-    box-shadow: 0 0 50px 5px #38040e;
+    -webkit-box-shadow: 0 0 50px 5px var(--hero-color);
+    -moz-box-shadow: 0 0 50px 5px var(--hero-color);
+    box-shadow: 0 0 50px 5px var(--hero-color);
   }
 }
