@@ -1,3 +1,9 @@
+:root {
+  --hero-color: #38040e;
+  --hero2-color: #530515;
+  --to-do-items: #300000;
+}
+
 .main {
   width: 90%;
   height: 95%;
@@ -35,7 +41,7 @@ input[type="text"] {
 }
 
 input[type="checkbox"] {
-  background-color: #38040e;
+  background-color: var(--hero-color);
   cursor: pointer;
   appearance: auto;
   padding: initial;
@@ -45,7 +51,7 @@ input[type="checkbox"] {
 #three button {
   font-size: 1em;
   color: white;
-  background-color: #38040e;
+  background-color: var(--hero-color);
   outline: 0;
   border: 0;
   font-weight: bold;
@@ -74,18 +80,18 @@ li {
   padding-bottom: 0.6rem;
   padding-top: 1em;
   font-size: 1.3em;
-  color: #300000;
+  color: var(--to-do-items);
 }
 
 a {
   float: right;
-  color: #610505;
+  color: var(--hero2-color);
   font-size: 1.3em;
   padding: 0.5em 0;
 }
 
 .delete {
-  background-color: #38040e;
+  background-color: var(--hero-color);
   float: right;
   padding: 0 0.3em;
   text-align: center;
